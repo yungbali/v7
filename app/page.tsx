@@ -1,11 +1,12 @@
 'use client'
 
 import { AppFlow } from "@/components/app-flow"
+import ClientOnly from "@/components/client-only"
 
 export default function Home() {
   return (
-    <div suppressHydrationWarning className="min-h-screen bg-background">
+    <ClientOnly>
       <AppFlow />
-    </div>
+    </ClientOnly>
   );
 }
